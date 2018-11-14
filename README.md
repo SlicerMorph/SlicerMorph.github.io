@@ -30,3 +30,5 @@ We are looking for sample data from diverse set of organisms (and scales) to tes
 ### Contact
 
 For project inquiries or more information please [contact SlicerMorph](mailto://SlicerMorph@outlook.com).
+
+<a href="https://twitter.com/MorphSlicer">SlicerMorph on Twitter </a></p>
