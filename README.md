@@ -12,7 +12,7 @@ If you are not familiar with the 3D-Slicer or looking for a free (and open-sourc
 3. [How to exchange complex projects with colleagues.](https://blogs.uw.edu/maga/2018/09/saving-and-exchanging-data-with-slicer/)
 4. [How to import Scanco microCT datasets into 3D-Slicer.](https://blogs.uw.edu/maga/2018/09/importing-microct-data-from-scanco-into-slicer/)
 
-For general Slicer related questions, you can seek help from the online Slicer community through the [forum]https://discourse.slicer.org). Please make sure to look at the [Frequently Asked Questions about Slicer](https://www.slicer.org/wiki/Documentation/4.10/FAQ) before posting. 
+For general Slicer related questions, you can seek help from the online Slicer community through the [forum](https://discourse.slicer.org). Please make sure to look at the [Frequently Asked Questions about Slicer](https://www.slicer.org/wiki/Documentation/4.10/FAQ) before posting. 
 
 ## Where to find 3D specimen data?
 If you are looking for sample 3D specimen data, these repositories are good places to start. Feel free to contact us if you are aware of other large 3D specimen repositories.
