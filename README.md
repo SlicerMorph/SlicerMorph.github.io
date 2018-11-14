@@ -13,13 +13,14 @@ If you are not familiar with the 3D-Slicer or looking for a free (and open-sourc
 4. [How to import Scanco microCT datasets into 3D-Slicer.](https://blogs.uw.edu/maga/2018/09/importing-microct-data-from-scanco-into-slicer/)
 
 ## Where to find 3D specimen data
-If you are looking for sample 3D specimen data, these repositories are good place to start. Feel free to contact u
+If you are looking for sample 3D specimen data, these repositories are good place to start. Feel free to contact us if you are aware of other large 3D specimen repositories.
 1. [MorphSource](https://www.morphosource.org): MorphoSource is a project-based data archive that allows researchers to store and organize, share, and distribute their own 3d data.
 2. [DigiMorph](https://www.digimorph.org): Digital Morphology library is a dynamic archive of information on digital morphology and high-resolution X-ray computed tomography of biological specimens.
 3. [FaceBase](https://www.facebase.org): Comprehensive craniofacial data (including 3D imaging datasets) from model organism (mouse and zebrafish) and humans. 
 4. [MorphoBrowser](http://morphobrowser.biocenter.helsinki.fi/):‘MorphoBrowser’ database and interface is a 3D visualisation and searching tool for mammalian teeth, accessible over the web.
 5. [Phenome10K](http://phenome10k.org/): A free online repository for 3-D scans of biological and palaeontological specimens.
 6. [Genetics of craniofacial shape in Mus](https://osf.io/w4wvg/): High-resolution 3D microCT head scans of a mouse panel between C57BL/6J and A/J mouse strains and associated genotype data.
+7. [Digital Morphology Museum of Kyoto University (KUPRI)](http://dmm4.pri.kyoto-u.ac.jp/dmm/WebGallery/index.html): DMM provides a large collection of CT and MRI tomography scans of various primates. 
 
 
 
