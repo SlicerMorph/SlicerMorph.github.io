@@ -11,6 +11,7 @@ If you are not familiar with the 3D-Slicer or looking for a free (and open-sourc
 2. [Obtaining 3D image stacks from MorphoSource and processing them in 3D-Slicer.](https://blogs.uw.edu/maga/2017/04/morphosource-data-and-dealing-with-dicom-series-in-slicer/)
 3. [How to exchange complex projects with colleagues.](https://blogs.uw.edu/maga/2018/09/saving-and-exchanging-data-with-slicer/)
 4. [How to import Scanco microCT datasets into 3D-Slicer.](https://blogs.uw.edu/maga/2018/09/importing-microct-data-from-scanco-into-slicer/)
+5. [Using landmarks to manually superimpose volumes. (new)](https://blogs.uw.edu/maga/2018/12/using-landmarks-to-manually-superimpose-two-volumes/)
 
 For general Slicer related questions, you can seek help from the online Slicer community through the [forum](https://discourse.slicer.org). Please make sure to look at the [Frequently Asked Questions about Slicer](https://www.slicer.org/wiki/Documentation/4.10/FAQ) before posting. 
 
