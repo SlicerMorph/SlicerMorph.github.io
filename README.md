@@ -18,7 +18,7 @@ For general Slicer related questions, you can seek help from the online Slicer c
 ## Where to find 3D specimen data?
 If you are looking for sample 3D specimen data, these repositories are good places to start. Feel free to contact us if you are aware of other large 3D specimen repositories.
 1. [MorphSource](https://www.morphosource.org): MorphoSource is a project-based data archive that allows researchers to store and organize, share, and distribute their own 3d data.
-2. [DigiMorph](https://www.digimorph.org): Digital Morphology library is a dynamic archive of information on digital morphology and high-resolution X-ray computed tomography of biological specimens.
+2. [DigiMorph](http://www.digimorph.org): Digital Morphology library is a dynamic archive of information on digital morphology and high-resolution X-ray computed tomography of biological specimens.
 3. [FaceBase](https://www.facebase.org): Comprehensive craniofacial data (including 3D imaging datasets) from model organisms (mouse and zebrafish) and humans. 
 4. [MorphoBrowser](http://morphobrowser.biocenter.helsinki.fi/):‘MorphoBrowser’ database and interface is a 3D visualisation and searching tool for mammalian teeth, accessible over the web.
 5. [Phenome10K](http://phenome10k.org/): A free online repository for 3-D scans of biological and palaeontological specimens.
