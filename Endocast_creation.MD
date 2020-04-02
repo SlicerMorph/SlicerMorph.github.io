@@ -100,7 +100,7 @@ Now that the skull segment is prepared in this way and the cranial cavity is (la
 ## Automatic Method
 One of the great advantages of 3D Slicer is its large collection of community-developed extensions, and one such extension – **SlicerMorph** – provides a tool that fully automates the process of segmenting a cranial cavity to produce an endocast. **SlicerMorph** is available as an extension inside 3D Slicer versions 4.11 and higher or can be downloaded as a standalone application. Here I’m using the version inside 3D Slicer.
 
-1.	Install the SlicerMorph extension.
+1.	Install the **SlicerMorph** extension.
 
        1.1.	Go to the View menu at the top left and open the Extension Manager.
        1.2.	In the Install Extensions tab, search for “SlicerMorph” and install.
