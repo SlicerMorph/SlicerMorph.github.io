@@ -5,7 +5,7 @@ Usually we’re interested in segmenting particular anatomical structures, such 
 
 In this tutorial I’ll demonstrate how cavity segmentation can be done in 3D Slicer, using the creation of an endocast from a skull as an example. The selection of tools available in 3D Slicer means that any task in it can typically be achieved in multiple ways, and here I’ll show you three different methods for creating an endocast – two manual and one automatic – to give you different options and ideas for how to go about cavity segmentation that you can select from or adapt for your own needs.
 
-If you’d like to follow along you can download the microCT data on the chimpanzee skull I’ll be using from MorphoSource at this link: https://www.morphosource.org/index.php/Detail/MediaDetail/Show/media_file_id/4390. If you do download the DICOM file, you’ll first need to patch it using the DICOM Patcher module before you’ll be able to load it into 3D Slicer. You can find instructions on how to do that here: https://blogs.uw.edu/maga/2017/04/morphosource-data-and-dealing-with-dicom-series-in-slicer/. 
+If you’d like to follow along you can download the microCT data on the chimpanzee skull I’ll be using from MorphoSource at this link: https://www.morphosource.org/index.php/Detail/MediaDetail/Show/media_file_id/4390. If you do download the DICOM file, you’ll first need to patch it using the DICOM Patcher module before you’ll be able to load it into 3D Slicer. You can find instructions on how to do that here: https://blogs.uw.edu/maga/2017/04/morphosource-data-and-dealing-with-dicom-series-in-slicer/.
 
 The scan is much higher resolution than what we need for this task, so to speed up all the operations you may also want to downsample the data using the Crop Volume module. You can find instructions on how to do that in Section 5 of this tutorial: https://blogs.uw.edu/maga/2017/04/a-worked-example-getting-and-visualizing-data-from-digimorph/. I used 4.00x scaling, which works well.
 
@@ -14,19 +14,19 @@ Both manual methods have initial steps in common, which involve isolating the ca
 
 1.	Create a segment for the skull.
 
-       1.1.	Open the Segment Editor.
+       1.1.	Open the **Segment Editor**.
        
        1.2.	Make sure the correct Master volume is selected.
        
        1.3.	Add a new segment for the skull.
        
-       1.4.	Create the skull segment using thresholding. This is most easily done in this example by using automatic thresholding. In the Threshold tool, go to Automatic threshold and click Set then Apply. You could instead set the Threshold Range manually if you wanted more control.
+       1.4.	Create the skull segment using thresholding. This is most easily done in this example by using automatic thresholding. In the *Threshold* tool, go to *Automatic threshold* and click *Set* then *Apply*. You could instead set the *Threshold Range* manually if you wanted more control.
 
 <img src='images/01-Segment-skull.png'>
 
 2.	Plug small openings in the skull segment, such as the naturally occurring foramina or holes due to damage to the specimen. (We can ignore the foramen magnum for now).
 
-       2.1.	With the Margin tool, apply a Grow operation to the skull segment. The default 3.0mm works well in this example for inflating the segment enough to close any small openings there may be, though in other cases you may have to adjust this value. You can have a quick scroll through the slice views to check that there are no remaining small openings leading out of the cranial cavity.
+       2.1.	With the *Margin* tool, apply a *Grow* operation to the skull segment. The default 3.0mm works well in this example for inflating the segment enough to close any small openings there may be, though in other cases you may have to adjust this value. You can have a quick scroll through the slice views to check that there are no remaining small openings leading out of the cranial cavity.
 
 <img src='images/02-Grow-skull-margin.png'>
 
@@ -38,19 +38,19 @@ Now that the skull segment is prepared in this way and the cranial cavity is (la
 
        1.1.	Align one of the slice views so that you can see the foramen magnum.
        
-       1.2.	Enable Slice intersections by opening the dropdown menu next to the Crosshairs button at the top centre of the UI and clicking Slice intersections at the bottom of the menu.
+       1.2.	Enable *Slice intersections* by opening the dropdown menu next to the *Crosshairs* button at the top centre of the UI and clicking *Slice intersections* at the bottom of the menu.
        
-       1.3.	Holding Shift, move your mouse around on your chosen axial slice view to position the crosshairs on the foramen magnum. Hold Ctrl/Cmd + Alt and click + drag the mouse to rotate the crosshairs so they nicely span the opening. All the slice views should now be coordinated to show the same section of the foramen magnum.
+       1.3.	Holding *Shift*, move your mouse around on your chosen axial slice view to position the crosshairs on the foramen magnum. Hold *Ctrl/Cmd + Alt* and *click + drag* the mouse to rotate the crosshairs so that they nicely span the opening. All the slice views should now be coordinated to show the same section of the foramen magnum.
 
 <img src='images/03-Slice-intersections.png'>
 
-       1.4.	Select the Paint tool, and a suitably large brush diameter, and go to the slice view that allows you to see the whole foramen magnum and click + drag to completely paint over the opening.
+       1.4.	Select the *Paint* tool, and a suitably large brush diameter, and go to the slice view that allows you to see the whole foramen magnum and *click + drag* to completely paint over the opening.
 
 <img src='images/04-Paint-foramen-magnum.png'>
 
 2.	Add a new segment for the endocast.
 
-3.	Create the endocast segment using the Islands tool.
+3.	Create the endocast segment using the *Islands* tool.
 
        3.1.	Under the Islands tool, select Add selected island.
        
