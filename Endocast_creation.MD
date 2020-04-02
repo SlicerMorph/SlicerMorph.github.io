@@ -131,7 +131,7 @@ We can investigate this difference using another extension to 3D Slicer called *
 
 <img src='images/15-Endocast-distance-comparison.png'>
 
-We can see that the endocast produced by the automatic method is slightly smaller than those produced by the manual methods, though it does show a comparative addition around the foramen magnum due to leakage out being less controlled in this method (though any leakage can of course be removed manually afterwards).
+We can see that the endocast produced by the automatic method is slightly smaller than those produced by the manual methods, though it does show a comparative addition around the foramen magnum due to leakage out being less controlled in this method (though any leakage could of course be removed manually afterwards).
 
 We can verify the overall size differences between methods by calculating the volumes of the different endocasts using the **Segment Statistics** module that’s part of base 3D slicer. This tool tells us that the endocasts produced by both Manual Method 1 and Manual Method 2 have the exact same volume of 319.8 cm<sup>3</sup>, while the endocast from the automatic method has a volume of 314.7 cm<sup>3</sup>. These differences between the methods are worth bearing in mind and perhaps further evaluating, especially if you were considering using them in a research context.
 
