@@ -128,7 +128,7 @@ You can see that as long as the two manual methods are applied carefully and con
 
 We can investigate this difference using another extension to 3D Slicer called **Model To Model Distance**. If we convert the endocast segments produced by the different methods to 3D models, then we can use this module to visualise the pairwise differences between them. By default, the **Model To Model Distance** module highlights any comparative additions between models in green and any comparative losses in red, while a lack of difference is indicated with grey.
 
-<img src='images/15-Endocast-distance-comparison.png>
+<img src='images/15-Endocast-distance-comparison.png'>
 
 We can see that the endocast produced by the automatic method is slightly smaller than those produced by the manual methods, though it does show a comparative addition around the foramen magnum due to leakage out being less controlled in this method (though any leakage can of course be removed manually afterwards).
 
