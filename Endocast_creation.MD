@@ -12,9 +12,9 @@ The scan is much higher resolution than what we need for this task, so to speed 
 ## Manual Methods 
 Both manual methods have initial steps in common, which involve isolating the cavity of interest so that it can then be segmented. Here, that means isolating the cranial cavity within the skull.
 
-1.0.	Create a segment for the skull.
+1.	Create a segment for the skull.
 
-       1.1.	Open the **Segment Editor**.
+       1.1.   Open the **Segment Editor**.
        
        1.2.	Make sure the correct *Master volume* is selected.
        
@@ -24,7 +24,7 @@ Both manual methods have initial steps in common, which involve isolating the ca
 
 <img src='images/01-Segment-skull.png'>
 
-2.0.	Plug small openings in the skull segment, such as the naturally occurring foramina or holes due to damage to the specimen. (We can ignore the foramen magnum for now).
+2.	Plug small openings in the skull segment, such as the naturally occurring foramina or holes due to damage to the specimen. (We can ignore the foramen magnum for now).
 
        2.1.	With the *Margin* tool, apply a *Grow* operation to the skull segment. The default 3.0mm works well in this example for inflating the segment enough to close any small openings there may be, though in other cases you may have to adjust this value. You can have a quick scroll through the slice views to check that there are no remaining small openings leading out of the cranial cavity.
 
@@ -34,7 +34,7 @@ Now that the skull segment is prepared in this way and the cranial cavity is (la
 
 ## Method 1: Paint + Islands
 
-1.0.	Paint over the foramen magnum to plug it and fully isolate the cranial cavity.
+1.	Paint over the foramen magnum to plug it and fully isolate the cranial cavity.
 
        1.1.	Align one of the slice views so that you can see the foramen magnum.
        
@@ -48,9 +48,9 @@ Now that the skull segment is prepared in this way and the cranial cavity is (la
 
 <img src='images/04-Paint-foramen-magnum.png'>
 
-2.0.	Add a new segment for the endocast.
+2.	Add a new segment for the endocast.
 
-3.0.	Create the endocast segment using the *Islands* tool.
+3.	Create the endocast segment using the *Islands* tool.
 
        3.1.	Under the *Islands* tool, select *Add selected island*.
        
@@ -58,13 +58,13 @@ Now that the skull segment is prepared in this way and the cranial cavity is (la
 
 <img src='images/05-Add-selected-island.png'>
 
-4.0.	Adjust the endocast segment to account for the inflated skull segment from the preparatory steps.
+4.	Adjust the endocast segment to account for the inflated skull segment from the preparatory steps.
 
        4.1.	With the *Margin* tool, *Grow* the endocast segment by 3.0mm (or by whatever amount you previously grew the skull segment by), so that it fills the original volume of the cranial cavity.
 
 <img src='images/06-Grow-endocast-margin.png'>
 
-5.0.	Depending on exactly where you painted over the foramen magnum, the previous step may lead to the endocast segment growing out of the skull a bit, and if it does then you can trim it with the *Scissors*.
+5.	Depending on exactly where you painted over the foramen magnum, the previous step may lead to the endocast segment growing out of the skull a bit, and if it does then you can trim it with the *Scissors*.
 
        5.1.	In the *Scissors* tool, select *Erase inside*, *Free-form*, and *Unlimited*.
        
@@ -73,9 +73,9 @@ Now that the skull segment is prepared in this way and the cranial cavity is (la
 <img src='images/07-Trim-endocast.png'>
 
 ## Method 2: Scissors + Islands
-1.0.	Add a new segment for the endocast.
+1.	Add a new segment for the endocast.
 
-2.0.	Create a block segment using the *Scissors* tool from which to carve out the endocast.
+2.	Create a block segment using the *Scissors* tool from which to carve out the endocast.
 
        2.1.	In the *Scissors* tool, select *Fill inside*, *Free-form*, and *Unlimited*.
        
@@ -87,7 +87,7 @@ Now that the skull segment is prepared in this way and the cranial cavity is (la
 
 <img src='images/08-Scissor-fill.png'>
 
-3.0.	Trim the block using the *Islands* tool to create the endocast segment.
+3.	Trim the block using the *Islands* tool to create the endocast segment.
 
        3.1.	In the *Islands* tool, select *Keep selected island*.
        
@@ -100,22 +100,22 @@ Now that the skull segment is prepared in this way and the cranial cavity is (la
 ## Automatic Method
 One of the great advantages of 3D Slicer is its large collection of community-developed extensions, and one such extension – **SlicerMorph** – provides a tool that fully automates the process of segmenting a cranial cavity to produce an endocast. **SlicerMorph** is available as an extension inside 3D Slicer versions 4.11 and higher or can be downloaded as a standalone application. Here I’m using the version inside 3D Slicer.
 
-1.0.	Install the SlicerMorph extension.
+1.	Install the SlicerMorph extension.
 
        1.1.	Go to the View menu at the top left and open the Extension Manager.
        1.2.	In the Install Extensions tab, search for “SlicerMorph” and install.
 
 <img src='images/10-Extension-manager.png'>
 
-2.0.	Open **SlicerMorph**’s tool for automatically segmenting cranial cavities by going to the *Module dropdown menu* > *SlicerMorph* > *SlicerMorph Labs* > *Segment Endocranium*.
+2.	Open **SlicerMorph**’s tool for automatically segmenting cranial cavities by going to the *Module dropdown menu* > *SlicerMorph* > *SlicerMorph Labs* > *Segment Endocranium*.
 
 <img src='images/11-Open-segment-endocranium-module.png'>
 
-3.0.	Within the tool, specify the input volume and segment that you want to output to. The smoothing kernel size is equivalent to the margin size that we used in Step 2 of the preparatory phase of the manual methods to grow the skull segment by to plug small holes and isolate the cranial cavity. Again, the default 3.0mm works fine for our chimpanzee here, but you may need to experiment to find the right value for other specimens.
+3.	Within the tool, specify the input volume and segment that you want to output to. The smoothing kernel size is equivalent to the margin size that we used in Step 2 of the preparatory phase of the manual methods to grow the skull segment by to plug small holes and isolate the cranial cavity. Again, the default 3.0mm works fine for our chimpanzee here, but you may need to experiment to find the right value for other specimens.
 
 <img src='images/12-Segment-endocranium-module.png'>
 
-4.0.	Click *Apply*. Depending on your computer and the smoothing kernel size that was used, after a few minutes you should have a virtual endocast.
+4.	Click *Apply*. Depending on your computer and the smoothing kernel size that was used, after a few minutes you should have a virtual endocast.
 
 <img src='images/13-Automatic-output.png'>
 
