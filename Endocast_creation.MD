@@ -122,13 +122,13 @@ One of the great advantages of 3D Slicer is its large collection of community-de
 ## Comparison of methods
 As I said at the beginning, I have presented multiple methods here to give you different options and showcase different approaches that might give you ideas for how to tackle your own cavity segmentation tasks. As some additional information to help you decide which method you might want to pursue, here’s a comparison of the different methods’ end products.
 
- <img src='images/14-Endocast comparison.png'>
+ <img src='images/14-Endocast-comparison.png'>
 
 You can see that as long as the two manual methods are applied carefully and consistently (e.g. ensuring that the foramen magnum is always crossed at the same point) then the endocasts produced by them are practically identical. On the other hand, the endocast produced by the automatic method is noticeably different from those created by the manual methods.
 
 We can investigate this difference using another extension to 3D Slicer called **Model To Model Distance**. If we convert the endocast segments produced by the different methods to 3D models, then we can use this module to visualise the pairwise differences between them. By default, the **Model To Model Distance** module highlights any comparative additions between models in green and any comparative losses in red, while a lack of difference is indicated with grey.
 
-<img src='images/15-Endocast distance comparison.png>
+<img src='images/15-Endocast-distance-comparison.png>
 
 We can see that the endocast produced by the automatic method is slightly smaller than those produced by the manual methods, though it does show a comparative addition around the foramen magnum due to leakage out being less controlled in this method (though any leakage can of course be removed manually afterwards).
 
