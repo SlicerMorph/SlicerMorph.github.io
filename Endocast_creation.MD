@@ -120,6 +120,12 @@ One of the great advantages of 3D Slicer is its large collection of community-de
 
 <img src='images/13-Automatic-output.png'>
 
+Here's a video from the **SlicerMorph** team showing just how quick and easy it can be to go from a CT scan to an endocast that you can start working with:
+
+<p align="center">
+<a href="https://www.youtube.com/watch?v=EAKN1GMNY98" target="_blank"><img src="http://img.youtube.com/vi/EAKN1GMNY98/0.jpg"/></a>
+</p>
+
 ## Comparison of methods
 As I said at the beginning, I have presented multiple methods here to give you different options and showcase different approaches that might give you ideas for how to tackle your own cavity segmentation tasks. As some additional information to help you decide which method you might want to pursue, here’s a comparison of the different methods’ end products.
 
