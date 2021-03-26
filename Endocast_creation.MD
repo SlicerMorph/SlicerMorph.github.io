@@ -108,7 +108,7 @@ One of the great advantages of 3D Slicer is its large collection of community-de
 
 <img src='images/10-Extension-manager.png'>
 
-2.	Open **SlicerMorph**’s tool for automatically segmenting cranial cavities by going to the *Module dropdown menu* > *SlicerMorph* > *SlicerMorph Labs* > *Segment Endocranium*.
+2.	Open **SlicerMorph**’s tool for automatically segmenting cranial cavities by going to the *Module dropdown menu* > *SlicerMorph* > *Utilities* > *Segment Endocranium*.
 
 <img src='images/11-Open-segment-endocranium-module.png'>
 
